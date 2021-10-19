@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link href="http://fonts.cdnfonts.com/css/madfont-2" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/shock-corridor" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/mr-white" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/cloudlike" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/comic-balloon" rel="stylesheet">
+                
+    <title>Podium Car</title>
+</head>
+<body id="carroo">
+    <header id="logo">
+        <h1 id="car">Podium</h1>
+
+        <section class="botao">
+            <a id="in" href="/"><strong>Inicio</strong></a>
+            <a id="cad" href="/lista"><strong>Ver carros</strong></a>
+            <a id="qs" href="/criar"><strong>Quem somos</strong></a>
+            
+        </section>
+    </header>
+    <section id="carro">
+    <h1 id="detalhes">Cadastrar um novo carro</h1>
+ 
+    <form action="/criar" method="POST">
+
+        <div>
+            <label for="nome">Imagem: </label>
+            <input type="text" name="imagem" id="imagem" placeholder="Coloque o link da sua imagem." required>
+        </div>
+
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite nome do carro." required>
+        </div>
+
+        <div>
+            <label for="modelo">Modelo: </label>
+            <input type="text" name="modelo" id="modelo" placeholder="Digite o modelo do carro." required>
+        </div>
+    
+        <div>
+            <label for="marca">Marca: </label>
+            <input type="text" name="marca" id="marca" placeholder="Digite a marca do carro." required>
+        </div>
+
+        <div>
+            <label for="velocidade">Velocidade: </label>
+            <input type="text" name="velocidade" id="velocidade" placeholder="Digite a descrição do carro." required>
+        </div>
+
+        <div>
+            <label for="tipo">Tipo: </label>
+            <input type="text" name="tipo" id="tipo" placeholder="Digite o tipo do carro." required>
+        </div>
+
+        <div>
+            <label for="motor">Motor: </label>
+            <input type="text" name="motor" id="motor" placeholder="Digite o motor do carro." required>
+        </div>
+
+        <div>
+            <label for="valor">Valor: </label>
+            <input type="number" name="valor" id="valor" placeholder="Digite o valor do carro." required>
+        </div>
+
+        <div>
+            <label for="fabricadoem">Ano de fabricação: </label>
+            <input type="number" name="fabricadoem" id="fabricadoem" placeholder="Digite o ano de fabricação do carro." required>
+        </div>
+
+        <div>
+            <label for="fabricadono">Local de fabricação: </label>
+            <input type="text" name="fabricadono" id="fabricadono" placeholder="Digite o local de fabricação do carro." required>
+        </div>
+
+        <div>
+            <label for="cambio">Tipo do câmbio: </label>
+            <input type="text" name="cambio" id="cambio" placeholder="Digite o tipo do câmbio do carro." required>
+        </div>
+
+        <div>
+            <label for="velocidade">Informações: </label>
+            <input type="text" name="informacoes" id="informacoes" placeholder="Digite as informações do carro" required>
+        </div>
+
+        <button type="submit">Cadastrar carro</button>
+    </form>
+</section>
+    <script src="/js/script.js"></script>
+</body>
+</html>

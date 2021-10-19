@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/estilo.css">
+        <link href="http://fonts.cdnfonts.com/css/madfont-2" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/shock-corridor" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/mr-white" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/cloudlike" rel="stylesheet">
+        <title>Produtos</title>
+    </head>
+    <body>
+        <header id="logo">
+            <h1 id="car">Podium</h1>
+
+            <section class="botao">
+                <a id="in" href="/"><strong>Inicio</strong></a>
+                <a id="cad" href="/criar"><strong>Cadastrar</strong></a>
+                <a id="qs" href="/criar"><strong>Quem somos</strong></a>
+            </section>
+        </header>
+
+
+
+        
+
+        <article id="tudoo" class="fundo">
+
+
+            <% if(message != ""){ %>
+
+            <section id="message">
+                <p class="sucesso">Carro cadastrado com sucesso!</p>      <span id="close">&times;</span>
+            </section>
+
+            <% } %>
+
+            <%   listaprincipal.forEach(item => { %>
+                <section class="container2" id="poke">
+                        <ul> 
+                            <img height="350" width="620" src= "<%= item.imagem %>">
+                            <div><p class="nomee"><strong>Nome: </strong> <%= item.nome %> <br> </p></div> 
+                            <div><p class="tipoo"><strong>Tipo: </strong> <%= item.tipo %> <br> </p></div>
+                            <div><a class="tipooo" href="/detalhes/<%=item.id%>">Ver Detalhes</a></div>
+                            <div><a class="tipooo" href="/editar/<%=item.id%>">Editar</a></div>
+                            <div><a class="tipooo" href="/deletar/<%=item.id%>">Deletar</a></div>
+                        </ul>
+                </section>
+
+            <%  })  %>
+
+        </article>
+
+        <script src="/js/script.js"></script>
+    </body>
+</html>
