@@ -209,7 +209,7 @@ app.post("/recebecar" , function (req, res) {
         message = ""
     }, 5000);
 
-    res.redirect("/lista");
+    res.redirect("/lista/");
 })
 
 
